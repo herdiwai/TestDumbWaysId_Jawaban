@@ -1,0 +1,11 @@
+1. Tampilkan seluruh data dari table heroes beserta type dari hero tsb :
+SELECT * FROM heroes JOIN types;
+
+2. Tampilkan seluruh data heroes berdasarkan type tertentu :
+SELECT * FROM heroes JOIN types ON heroes.types_id = types.id WHERE types.name= 'Fighter';
+
+3. Tampilkan spesifik data heroes dengan type nya :
+SELECT heroes.name, types_id FROM heroes JOIN types ON heroes.types_id = types.id WHERE types.name = 'Tank';
+
+4. Screen shootkan juga hasil query POST / menambah data :
+INSERT INTO `heroes` (`id`,`name`,`types_id`,`photo`) VALUES (NULL, 'helcrut', 5, 'assasin.img');
